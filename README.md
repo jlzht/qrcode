@@ -1,9 +1,10 @@
-### QR code
+# QR code
 Pequeno projeto interativo digital
 
-### Compilando
-
+## Compilando
 Instale as dependências:
+- g++
+- cmake
 - conan
 - meson
 
@@ -14,11 +15,7 @@ meson setup build --native-file build/conan_meson_native.ini
 meson compile -C build
 ```
 
-### Desenvolvimento
-
-
-
-### Utilização
+## Utilização
 Para inicializar o servidor web, é necessário especificar um arquivo de entrada.
 Esse arquivo será utilizado para criar as rotas de acesso ocultas. O número de rotas
 equivale ao número de linhas do arquivo. Também é necessário especificar o arquivo de
