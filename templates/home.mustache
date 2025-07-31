@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+
+<p> QR Code </p>
+
+{{#user}}
+    <p>Olá, {{user}}! Você está logado.</p>
+    <a href="/leaderboard">Ver placar</a><br>
+    <a href="/logout">Sair</a>
+{{/user}}
+
+{{^user}}
+    <p>Para começar, faça login ou crie uma conta.</p>
+    <a href="/login">Login</a><br>
+    <a href="/signup">Criar conta</a>
+{{/user}}
